@@ -1,10 +1,8 @@
 function largestNumber(nums) {
-    const result = nums.sort((a, b) => {
-        return `${b}${a}` - `${a}${b}` 
-    }).join("")
+    const result = nums.sort()
 
     if(Number(result) === 0) return '0';
     return result
 }
 
-console.log(largestNumber([10, 2]))
+console.log(largestNumber([1,2,3,99,34,11]))
